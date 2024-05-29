@@ -23,13 +23,10 @@ All data can be found within the [Data Folder](data)
 
 # Coding for the Report
 
-## Python Notebook
-
-This [Python Notebook](project_files/report.ipynb) contains the data which was cleaned for presentation using Python.
 
 ### Python Script
 
-This [Python Script](report.py) contains the Python source code utilized in the [Python Notebook](project_files/report.ipynb) in order for easier access in the R console where the report was created.
+This [Python Script](report.py) contains the Python source code utilized in the R console where the report was created.
 
 ## Rmd File
 
