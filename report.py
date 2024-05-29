@@ -65,6 +65,7 @@ cols = summary.columns.tolist()
 cols.insert(1, cols.pop(cols.index('GC')))
 # Reorder the columns in the dataframe
 summary = summary[cols].round(decimals=3)
+# summary.to_csv('data/ump_totals.csv', index=False)
 
 # print(summary)
 
@@ -103,7 +104,7 @@ seasoned_umps = seasoned_umps.sort_values('avg_rank', ascending=False).reset_ind
 # Add a column with the home team favor rank (a measure of bias in an umpires calls)
 seasoned_umps.loc[:, 'Fav_rank'] = seasoned_umps['Fav [H]'].abs().rank(ascending=False, pct=True)
 seasoned_umps = seasoned_umps.round(decimals=3)
-
+# seasoned_umps.to_csv('data/seasoned_umps.csv', index=False)
 
 # %% [markdown]
 # # So how bad is Angel Hernandez truly?
