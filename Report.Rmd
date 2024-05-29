@@ -55,6 +55,44 @@ For a better understanding of the UmpScorecards methodology here are some useful
 - [FAQs](https://umpscorecards.com/info/#faqs)
 - [Glossary](https://umpscorecards.com/info/#glossary)
 
+# Table of Variables
+
+```{r}
+variables <- data.frame(
+  Variable = c("Date", "Umpire", "Home", "Away", "R [H]", "R [A]",
+               "PC", "IC", "xIC", "CC", "xCC", "CCAx", "Acc", "xAcc", "AAx", 
+               "Con", "Fav [H]", "totRI"),
+  Description = c(
+    "Date of the game", "Name of the umpire", 
+    "Home team", "Away team", "Runs scored by the home team", 
+    "Runs scored by the away team", "Pitches called", "Incorrect calls", 
+    "Expected incorrect calls", "Correct calls", "Expected correct calls", 
+    "Correct calls above expected", "Accuracy", "Expected accuracy", 
+    "Accuracy above expected", "Consistency", "Favor to home team", 
+    "Total run impact"
+  ),
+  Type = c(
+    "Date", "Character", 
+    "Character", "Character", "Integer", 
+    "Integer", "Integer", "Integer", 
+    "Integer", "Integer", "Integer", 
+    "Numeric", "Numeric", "Numeric", 
+    "Numeric", "Numeric", "Numeric", 
+    "Numeric"
+  )
+)
+
+var_tbl <- 
+  variables %>%
+  kbl(caption = "Table of Variables", booktabs = TRUE,
+      format = "latex") %>% 
+  kable_styling(latex_options = c("HOLD_position", "striped", "scale_down"),
+                stripe_color = "#e6e6fa", font_size = 12) %>% 
+  row_spec(0, bold = TRUE, align = "c") 
+var_tbl
+```
+
+
 # A Reflection on Notable Angel Hernandez blunders
 
 As a Phillies fan, I have quite a few fond memories of him over the last 3 seasons. 
