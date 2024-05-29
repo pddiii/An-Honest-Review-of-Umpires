@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.29)  29 MAY 2024 15:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.29)  29 MAY 2024 16:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -653,11 +653,11 @@ LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 21
 (/Users/PeterDePaul/Library/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [4{/Users/PeterDePaul/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/Users/PeterDePaul/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/Users/PeterDePaul/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}]
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 340.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 316.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14> on input line 340.
+(Font)              <14> on input line 316.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9.79996> on input line 340.
+(Font)              <9.79996> on input line 316.
 [5] [6] [7] [8] (./Report.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
@@ -665,15 +665,15 @@ L3 programming layer <2024-03-14>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 16063 strings out of 474104
- 255742 string characters out of 5737940
+ 16065 strings out of 474104
+ 255764 string characters out of 5737940
  1957493 words of memory out of 5000000
  37969 multiletter control sequences out of 15000+600000
- 629265 words of font info for 160 fonts, out of 8000000 for 9000
+ 629348 words of font info for 161 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  83i,10n,93p,1003b,451s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </Users/PeterDePaul/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></Users/PeterDePaul/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></Users/PeterDePaul/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></Users/PeterDePaul/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></Users/PeterDePaul/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></Users/PeterDePaul/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb></Users/PeterDePaul/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb></Users/PeterDePaul/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></Users/PeterDePaul/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on Report.pdf (8 pages, 237556 bytes).
+Output written on Report.pdf (8 pages, 237232 bytes).
 PDF statistics:
  222 PDF objects out of 1000 (max. 8388607)
  190 compressed objects within 2 object streams
