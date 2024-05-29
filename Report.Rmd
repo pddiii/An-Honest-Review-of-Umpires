@@ -6,7 +6,7 @@ author: |
   | Peter D. DePaul III
 date: "05-29-2024" 
 abstract: ""
-bibliography: references.bib
+bibliography: project_files/references.bib
 header-includes:
   - \usepackage[usenames,dvipsnames]{xcolor}
   - \usepackage[table]{xcolor}
