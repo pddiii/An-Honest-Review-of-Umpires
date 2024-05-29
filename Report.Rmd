@@ -145,8 +145,7 @@ I find this funny because Joe West sounds like every other scared, low-performan
 
 Below is the full list of umpires ranked upon a few selected columns ranked using percentiles:
 
-- In all of these rankings a value closer to 1 indicates better performance by the umpire, while values closer to 0 indicates worse performance.
-- The `avg_rank` column is an average of the other `_rank` columns with the exception of `Fav_rank`. This aims to measure overall performance of the umpires based on the average percentile of their rankings in the following categories:
+- The `avg_pct` column is an average of the other `_pct` columns with the exception of `Fav_pct`. This aims to measure overall performance of the umpires based on the average percentile of their rankings in the following categories:
   - Accuracy (% of Correct Calls)
   - Consistency
   - AAx (Accuracy above Expected Accuracy)
@@ -156,16 +155,16 @@ Below is the full list of umpires ranked upon a few selected columns ranked usin
 ```{r umpsTable}
 seasoned_umps_tbl <-
   head(seasoned_umps, 10) %>% 
-  select(Umpire, GC, c(IC_per_100:Fav_rank)) %>% 
+  select(Umpire, GC, c(IC_per_100:Fav_pct)) %>% 
   kbl(caption = "Experienced Umpires Data", booktabs = TRUE,
       format = "latex") %>% 
   kable_styling(latex_options = c("HOLD_position", "striped", "scale_down"),
-                stripe_color = "#e6e6fa", font_size = 12) %>% 
+                stripe_color = "#e6e6fa", font_size = 14) %>% 
   row_spec(0, bold = TRUE, align = "c")
 seasoned_umps_tbl
 ```
   
-In Table \@ref(tab:umpsTable) we see a dataframe containing the Percentile rankings for the columns with the exception of the `Fav_rank` which is simply the numerical rank in the Favor of calls for an umpire. A higher `Fav_rank` indicates the absolute value of the `totalRI` of the umpire was closer to a perfect favor of calls which is equal to 0.
+In Table \@ref(tab:umpsTable) we see a dataframe containing the Percentile rankings for the columns with the exception of the `Fav_pct` which is simply the numerical rank in the Favor of calls for an umpire. A higher `Fav_pct` indicates the absolute value of the `totalRI` of the umpire was closer to a perfect favor of calls which is equal to 0.
 
 As we can see from this Table of the Experienced Umpires with greater than 29,500 Pitches Called (`PC`), Will Little, Pat Hoberg, and Ben May have been the top 3 overall umpires based on Accuracy (`Acc`), Consistency (`Con`), Accuracy Above expected (`AAX`), Incorrect Calls per 100 Pitches Called (`IC_per_100`), and total Run Impact (`totRI`)
   
@@ -204,7 +203,7 @@ As for Joe West, he is noticeably worst than Hernandez in every category with th
 
 ## Giving Credit where it's Due
 
-I want to remark that the one thing I find statistically remarkable about Angel Hernandez during his umpiring career is that Hernandez ranks in the 95th percentile of umpires for the `Favor [H]` variable. This is good for 4th best amongst all umpires.
+I want to remark that the one thing I find statistically remarkable about Angel Hernandez during his umpiring career is that Hernandez ranks in the 94th percentile of umpires for the `Favor [H]` variable. This is good for 4th best among all umpires.
 
 This variable measure the number of runs in favor of the home team where a positive value represents a benefit for the home team, while a negative value represents a benefit for the away team. The ranking was calculated using the absolute values of the `Fav [H]` column, where the closer a value is to 0 then the closer it's percentile is to 1.
 

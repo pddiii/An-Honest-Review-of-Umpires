@@ -89,20 +89,20 @@ seasoned_umps.loc[:, 'IC_per_100'] = seasoned_umps['IC'] / 100
 # Create and add columns with the percentile rankings of the specified columns
 # sorted in ascending order (1 is best, 0 is worst)
 for col in ['Acc', 'Con', 'AAx']:
-    seasoned_umps.loc[:, col + '_rank'] = seasoned_umps[col].rank(ascending=True, pct=True)
+    seasoned_umps.loc[:, col + '_pct'] = seasoned_umps[col].rank(ascending=True, pct=True)*100
 
 # Create and add columns with the percentile rankings of the specified columns
 # sorted in ascending order (1 is worst, 0 is best)
 for col in ['IC_per_100', 'totRI']:
-    seasoned_umps.loc[:, col + '_rank'] = seasoned_umps[col].rank(ascending=False, pct=True)
+    seasoned_umps.loc[:, col + '_pct'] = seasoned_umps[col].rank(ascending=False, pct=True)*100
 
 # Add a column with the average rank from the columns above
 # the closer the 'avg_rank' is to 1 the better the umpire
-seasoned_umps.loc[:, 'avg_rank'] = seasoned_umps.filter(regex='_rank$').mean(axis=1)
+seasoned_umps.loc[:, 'avg_pct'] = seasoned_umps.filter(regex='_pct$').mean(axis=1)
 # Sort the dataframe by the average rank in descending order
-seasoned_umps = seasoned_umps.sort_values('avg_rank', ascending=False).reset_index(drop=False)
+seasoned_umps = seasoned_umps.sort_values('avg_pct', ascending=False).reset_index(drop=False)
 # Add a column with the home team favor rank (a measure of bias in an umpires calls)
-seasoned_umps.loc[:, 'Fav_rank'] = seasoned_umps['Fav [H]'].abs().rank(ascending=False, pct=True)
+seasoned_umps.loc[:, 'Fav_pct'] = seasoned_umps['Fav [H]'].abs().rank(ascending=False, pct=True)*100
 seasoned_umps = seasoned_umps.round(decimals=3)
 # seasoned_umps.to_csv('data/seasoned_umps.csv', index=False)
 
