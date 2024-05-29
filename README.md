@@ -9,6 +9,14 @@ The goal of this report is to make an objective review of Umpires, specifically 
 
 [Dictionary](project_files/dictionary.md)
 
+# Data
+
+All data can be found within the [Data Folder](data)
+
+- [games.csv](data/games.csv) contains each game of an umpire from 2015 through 05-27-2024.
+- [seasoned_umps.csv](data/seasoned_umps.csv) contains the rank variables of all "seasoned umpires" (those with greater than 29,500 Pitches Called since 2015)
+- [ump_totals.csv](data/ump_totals.csv) contains the summarised statistics of `games.csv`.
+
 # Report File
 
 [Access the Report Here](Report.pdf)
